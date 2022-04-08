@@ -1,4 +1,4 @@
-![example workflow](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/nodeci.yml/badge.svg)
+![example workflow](https://github.com/KirihimeNatsuki/testUnitLesson/actions/workflows/nodeci.yml/badge.svg)
 
 # Getting Started with Create React App
 
