@@ -13,7 +13,7 @@ test("show multiple examples", () => {
     } = result.current;
     
     //Test addition
-    expect(addition("1", "2")).toBe("77");
+    expect(addition("1", "2")).toBe("3");
     expect(addition("1", "2")).not.toBe("4");
     
     //Test soustraction
