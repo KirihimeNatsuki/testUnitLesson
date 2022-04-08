@@ -4,13 +4,13 @@ on:
   push:
     branches: [ testUnitJS ]
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Install 🔧
-          run: npm install
+    steps:
+      - name: Install 🔧
+        run: npm install
 
-        - name: Test 🚨
-          run: npm run test
+      - name: Test 🚨
+        run: npm run test
