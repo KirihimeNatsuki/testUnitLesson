@@ -75,3 +75,9 @@ describe('My Failed Test', () => {
       expect(true).to.equal(false)
     });
 });
+
+describe('My True Test', () => {
+    it('Does not do much!', () => {
+      expect(true).to.equal(true)
+    });
+});
