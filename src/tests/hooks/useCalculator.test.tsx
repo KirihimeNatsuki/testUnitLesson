@@ -14,7 +14,7 @@ test("show multiple examples", () => {
     
     //Test addition
     expect(addition("1", "2")).toBe("3");
-    expect(addition("1", "2")).not.toBe("4");
+    expect(addition("1", "2")).not.toBe("77");
     
     //Test soustraction
     expect(soustraction("1", "2")).toBe("-1");
