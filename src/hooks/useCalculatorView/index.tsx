@@ -4,7 +4,7 @@ import useCalculator from "../useCalculator";
 const useCalculatorView = () => {
   const [result, setResult] = useState<string>("");
   // @ts-ignore
-  const { addition, substraction, division, modulo, square } = useCalculator();
+  const { addition, soustraction, division, modulo, sqrt } = useCalculator();
 
   const doAction = () => {
     if (result.includes("+")) {
@@ -16,7 +16,7 @@ const useCalculatorView = () => {
       const values = result.split("-");
       const value1 = values[0];
       const value2 = values[1];
-      setResult(substraction(value1, value2));
+      setResult(soustraction(value1, value2));
     } else if (result.includes("/")) {
       const values = result.split("/");
       const value1 = values[0];
@@ -30,8 +30,7 @@ const useCalculatorView = () => {
     } else if (result.includes("√x")) {
       const values = result.split("√x");
       const value1 = values[0];
-      const value2 = values[1];
-      setResult(square(value1, value2));
+      setResult(sqrt(value1));
     }
   };
 
@@ -56,6 +55,7 @@ const useCalculatorView = () => {
   return {
     result,
     addResult,
+
   };
 };
 

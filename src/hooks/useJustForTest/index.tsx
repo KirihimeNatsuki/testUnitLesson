@@ -11,7 +11,7 @@ const useJustForTest = () => {
     return 0;
   };
 
-  const toContainEqual = () => {
+  const testToContainEqual = () => {
     return [
       { delicious: true, sour: false },
       {
@@ -38,8 +38,7 @@ const useJustForTest = () => {
     testAssertEquals,
     testToBeInstanceOf,
     testToHaveReturned,
-    // todo tests
-    toContainEqual,
+    testToContainEqual,
     testToStrictEqual,
     testToBeLessThan,
     testToBeNull,
